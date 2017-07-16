@@ -28,7 +28,7 @@ import javafx.stage.Stage;
 
 public class helloword extends Application {
 	
-	HashMap hm = new HashMap();
+	private HashMap hm = new HashMap();
 
 	@Override
     public void start(Stage primaryStage) {

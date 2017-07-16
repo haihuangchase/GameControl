@@ -1,5 +1,6 @@
 package helloword.txt;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -21,6 +22,7 @@ public class KeyUtil {
     private static final String DELIMINATOR = "\t";
     private static final String KEY_DELIMINATOR = "\\+";
     private static final String PATH_ROOT = "/tmp/vAttack/";
+    private static final String FILE_EXT = ".tsv";
 
     private Map<String, List<Integer>> keyMap = new HashMap<>();
 
@@ -34,7 +36,7 @@ public class KeyUtil {
                 String skills = line[0];
                 List<Integer> keyCodes = getKeyCodes(line[1]);
                 keyMap.put(skills, keyCodes);
-              //  LOGGER.info(keyCodes.toString());
+                LOGGER.info(keyCodes.toString());
             }
             scanner.close();
         } catch (FileNotFoundException e) {
@@ -44,19 +46,18 @@ public class KeyUtil {
                 scanner.close();
             }
         }
-     //   LOGGER.setLevel(Level.INFO);
+        LOGGER.setLevel(Level.INFO);
     }
 
     public static Map<String, String> load(String gameName) {
         Scanner scanner = null;
         Map<String, String> keyMap = new HashMap<>();
         try {
-            scanner = new Scanner(new File(PATH_ROOT + gameName));
+            scanner = new Scanner(new File(PATH_ROOT + gameName + FILE_EXT));
 
             while (scanner.hasNext()) {
                 String[] line = scanner.nextLine().split(DELIMINATOR);
                 keyMap.put(line[0], line[1]);
-                //LOGGER.info(keyCodes.toString());
             }
 
         } catch (FileNotFoundException e) {

@@ -8,7 +8,7 @@ import edu.cmu.sphinx.result.WordResult;
 import java.io.IOException;
 
 public class Voice {
-    LiveSpeechRecognizer recognizer;
+    private LiveSpeechRecognizer recognizer;
 
     public Voice() {
         try {
