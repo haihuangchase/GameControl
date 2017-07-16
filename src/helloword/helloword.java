@@ -42,7 +42,7 @@ public class helloword extends Application {
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(scenetitle, 0, 0, 2, 1);
 
-        Label gm = new Label("Game Nmae");
+        Label gm = new Label("Game Name");
         grid.add(gm, 0, 1);
         
         TextField userTextField = new TextField();
@@ -86,9 +86,7 @@ public class helloword extends Application {
         HBox hbBtn = new HBox(10);
         hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
         hbBtn.getChildren().add(btn);
-        grid.add(hbBtn, 1, 4);
-        final Text actiontarget = new Text();
-        grid.add(actiontarget, 1, 6);
+        grid.add(hbBtn, 1, 7);
         btn.setOnAction(new EventHandler<ActionEvent>() {
         	 
             @Override
@@ -108,7 +106,7 @@ public class helloword extends Application {
                 }
             }
         });
-        Scene scene = new Scene(grid, 500, 275);
+        Scene scene = new Scene(grid, 500, 500);
         primaryStage.setScene(scene);
         primaryStage.show();
         
