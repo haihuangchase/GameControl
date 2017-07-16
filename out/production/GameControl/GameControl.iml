@@ -9,37 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/sphinx4-core-5prealpha-20160628.232526-10.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/sphinx4-data-5prealpha-20160628.232535-10.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="jar://$USER_HOME$/Downloads/sphinx4-data-5prealpha-20160628.232535-10.jar!/" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/apache-log4j-2.8.2-bin" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/Downloads/apache-log4j-2.8.2-bin" />
-        </SOURCES>
-        <jarDirectory url="file://$USER_HOME$/Downloads/apache-log4j-2.8.2-bin" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/Downloads/apache-log4j-2.8.2-bin" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="sphinx4-core-5prealpha-20160628.232526-10" level="project" />
+    <orderEntry type="library" name="apache-log4j-2.8" level="project" />
   </component>
 </module>

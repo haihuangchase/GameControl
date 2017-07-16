@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;main.java&apos; to &apos;JavaFXtuts.java&apos;&#x0A;- Original project: &apos;UIProject&apos;&#x0A;- Original element: &apos;main.java&apos;&#x0A;- Renamed element: &apos;JavaFXtuts.java&apos;" description="Rename compilation unit &apos;main.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{main.java" name="JavaFXtuts.java" references="false" stamp="1500149650500" version="1.0"/>
-</session>

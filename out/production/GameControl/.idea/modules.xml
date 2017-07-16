@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GameControl.iml" filepath="$PROJECT_DIR$/GameControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vAttack.iml" filepath="$PROJECT_DIR$/vAttack.iml" />
     </modules>
   </component>
 </project>
